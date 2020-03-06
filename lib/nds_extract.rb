@@ -19,10 +19,6 @@ def gross_for_director(director_data)
    
 end
 
-# Write a method that, given an NDS creates a new Hash
-# The return value should be like:
-#
-# { directorOne => allTheMoneyTheyMade, ... }
 
 def directors_totals(nds)
       result = {}  
@@ -32,9 +28,7 @@ def directors_totals(nds)
       name_index = 0 
       while name_index < nds[row_index][:name].length do 
         director = nds[row_index][:name]
-        
       
-        
         result[director] = gross_for_director(nds[row_index])
         name_index += 1 
         
@@ -42,7 +36,6 @@ def directors_totals(nds)
       
   row_index +=1
   end
-
 
   return result
 end
