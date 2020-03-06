@@ -7,6 +7,7 @@ require 'directors_database'
 # using director_data as input
 
 def gross_for_director(director_data)
+  binding.pry 
   gross_income = 0  
   column_index = 0
   while column_index < directors_database[director_data][:movies].length do
