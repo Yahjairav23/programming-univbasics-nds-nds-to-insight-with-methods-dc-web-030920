@@ -13,7 +13,7 @@ def gross_for_director(director_data)
           gross_income += directors_database[director_data][:movies][column_index][:worldwide_gross]
           column_index += 1 
         end 
-  return gross_income
+  return gross_income.to_i 
    
 end
 
