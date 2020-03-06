@@ -7,7 +7,7 @@ require 'directors_database'
 # using director_data as input
 
 def gross_for_director(director_data)
-  
+   binding.pry 
   row_index = 0 
   gross_income = 0  
   column_index = 0
@@ -15,7 +15,7 @@ def gross_for_director(director_data)
           gross_income += director_data[row_index][:movies][column_index][:worldwide_gross]
           column_index += 1 
         end 
-    binding.pry 
+   
 end
 
 # Write a method that, given an NDS creates a new Hash
