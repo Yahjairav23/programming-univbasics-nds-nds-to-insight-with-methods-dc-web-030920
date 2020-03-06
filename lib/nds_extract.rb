@@ -9,7 +9,7 @@ def gross_for_director(director_data)
   binding.pry
   gross_income = 0  
   column_index = 0
-  while column_index < director_data[].length do
+  while column_index < director_data[row_index][:movies].length do
           gross_income += director_data
           column_index += 1 
         end 
