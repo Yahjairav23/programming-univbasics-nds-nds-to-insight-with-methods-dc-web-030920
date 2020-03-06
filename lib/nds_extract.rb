@@ -7,12 +7,10 @@ require 'directors_database'
 # using director_data as input
 
 def gross_for_director(director_data)
-   binding.pry 
-  row_index = 0 
   gross_income = 0  
   column_index = 0
   while column_index < director_data[:movies].length do
-          gross_income += director_data[row_index][:movies][column_index][:worldwide_gross]
+          gross_income += director_data[:movies][column_index][:worldwide_gross]
           column_index += 1 
         end 
    
