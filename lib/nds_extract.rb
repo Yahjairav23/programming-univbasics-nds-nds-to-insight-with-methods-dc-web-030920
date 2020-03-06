@@ -11,7 +11,7 @@ def gross_for_director(director_data, row_index)
   gross_income = 0  
   column_index = 0
   while column_index < director_data[row_index][:movies].length do
-          gross_income += director_data
+          gross_income += director_data[row_index][:movies][column_index][:worldwide_gross]
           column_index += 1 
         end 
         
